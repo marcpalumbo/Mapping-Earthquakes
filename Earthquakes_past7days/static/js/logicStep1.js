@@ -32,9 +32,6 @@ L.control.layers(baseMaps).addTo(map);
 // //adding geoJSON data
 
 
-// Accessing the toronto GeoJSON URL
-let torontoHoods = "https://raw.githubusercontent.com/marcpalumbo/Mapping-Earthquakes/main/torontoNeighborhoods.json";
-
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson").then(function(data) {
   console.log(data);
   L.geoJSON(data).addTo(map);});
